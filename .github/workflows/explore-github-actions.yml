@@ -6,17 +6,3 @@ on:
       - deploy
 jobs:
   run: echo "The job was automatically triggered by a push event."
-  deploy:
-    name: Explore Github Actions
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-            ref: ${{ github.ref }}
-      - name: Clone repository to runner
-        run: git clone https://github.com${{ github.repository }}.git
-      - name: List files in repository
-        run: ls -la
-      - name: Job status
-        run: echo "This job's status is a success"
