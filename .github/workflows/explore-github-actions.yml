@@ -5,8 +5,7 @@ on:
     branches:
       - deploy
 jobs:
-  run:
-    echo "The job was automatically triggered by a push event."
+  run: echo "The job was automatically triggered by a push event."
   deploy:
     name: Explore Github Actions
     runs-on: ubuntu-latest
