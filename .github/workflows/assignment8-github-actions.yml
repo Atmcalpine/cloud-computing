@@ -4,7 +4,6 @@ on: [ push ]
 jobs:
   deploy:
   runs-on: ubuntu-latest
-
   Steps:
     - run: echo "The job was automatically triggered by a push event."
     - run: echo Your branch name is ${{ github_ref }} and your repository is ${{ github_repository }}.
