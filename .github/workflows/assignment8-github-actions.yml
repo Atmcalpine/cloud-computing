@@ -10,3 +10,6 @@ jobs:
       - run: echo Your branch name is ${{ github.ref }} and your repository is ${{ github.repository }}.
       - name: Checkout repository code
         uses: actions/checkout@v4
+      - run: echo "The workflow is now ready to rest your code on the runner"
+      - name: List files in the repository
+        run: ls -la
