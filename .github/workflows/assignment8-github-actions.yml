@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "The job was automatically triggered by a push event."
-      - run: echo Your branch name is ${{ GITHUB.REF }} and your repository is ${{ github_repository }}.
+      - run: echo Your branch name is ${{ GITHUB.REF }} and your repository is ${{ github.repository }}.
