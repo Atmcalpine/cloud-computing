@@ -1,8 +1,0 @@
-name: explore-github-actions
-run-name: ${{ github.actor }} is exploring Github Actions 🚀
-on:
-  push:
-    branches:
-      - deploy
-jobs:
-  run: echo "The job was automatically triggered by a push event."
