@@ -13,3 +13,4 @@ jobs:
       - run: echo "The workflow is now ready to rest your code on the runner"
       - name: List files in the repository
         run: ls -la
+      - run: echo "The job's status is success"
